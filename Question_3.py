@@ -11,7 +11,7 @@ def Findmum(Arraylist):
             max ^= maxtem
         if min > mintem:
             min ^= mintem
-            maxtem ^= max
+            mintem ^= min
             min ^= mintem
     return max, min
 arr = [4, 2, 7, 9, 1]
