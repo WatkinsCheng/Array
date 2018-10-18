@@ -6,13 +6,13 @@ def Findmum(Arraylist):
         maxtem = i
         mintem = i
         if max < maxtem:
-            max = maxtem ^ max
-            maxtem = maxtem ^ max
-            max = maxtem ^ max
+            max ^= maxtem
+            maxtem ^= max
+            max ^= maxtem
         if min > mintem:
-            min = mintem ^ min
-            mintem = mintem ^ min
-            min = mintem ^ min
+            min ^= mintem
+            maxtem ^= max
+            min ^= mintem
     return max, min
 arr = [4, 2, 7, 9, 1]
 maxmum, minmum = Findmum(arr)
